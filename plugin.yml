@@ -1,0 +1,12 @@
+name: BroadcastUI
+author: LGDFR
+version: 1.0
+main: LGDFR\BroadcastUI\Main
+api: 3.11.4
+website: https://github.com/LGDFR
+depend : [FormAPI]
+commands:
+   broadcastui:
+      usage: /broadcastui
+      description: open the broadcastUI menu.
+      permission: broadcastui.command
