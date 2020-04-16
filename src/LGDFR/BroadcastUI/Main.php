@@ -6,7 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
-
+use LGDFR\BroadcastUI\FormAPI\CustomForm;
 class Main extends PluginBase{
     public function onEnable(){
         $this->getLogger()->info("is well activate");
@@ -31,9 +31,9 @@ class Main extends PluginBase{
     }
     public function openMycustomToogleForm(Player $player) {
         
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         
-        $form = $api->createCustomForm(function(Player $player,array $data = null){
+        
+        $form = new CustomForm(function(Player $player,array $data = null){
             
             if($data === null){
                 return true;
