@@ -23,13 +23,13 @@ class Main extends PluginBase{
             case "broadcastui":
                 if($sender instanceof Player){
                       
-                    $this->openMycustomToogleForm($sender);
+                    $this->BroadcastUI($sender);
                 }
                 break;
         }
         return true;
     }
-    public function openMycustomToogleForm(Player $player) {
+    public function BroadcastUI(Player $player) {
         
         
         
